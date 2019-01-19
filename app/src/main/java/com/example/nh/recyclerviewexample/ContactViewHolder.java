@@ -23,5 +23,6 @@ public class ContactViewHolder extends RecyclerView.ViewHolder {
         name.setText(contact.getName());
         lastMessage.setText(contact.getLastMessage());
         image.setImageResource(contact.getImage());
+
     }
 }
