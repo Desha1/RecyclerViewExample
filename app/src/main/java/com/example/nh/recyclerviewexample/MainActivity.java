@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         contactsData.add(c5);
 
         contactsRv = findViewById(R.id.rv_contacts);
-        //contactsRv.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
+        contactsRv.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
         contactsRv.setLayoutManager(new GridLayoutManager(this,2));
         adapter = new ContactAdapter(this,contactsData);
         contactsRv.setAdapter(adapter);
